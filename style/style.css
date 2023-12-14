@@ -1878,5 +1878,8 @@ line-height: 120%;
         line-height: 120%;
         width: 100%;
     }
+    .hero .wrapper {
+        justify-content: center;
+    }
 }
 /*---------------------------------------------------------------*/
