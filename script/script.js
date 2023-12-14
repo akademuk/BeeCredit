@@ -75,6 +75,34 @@ window.addEventListener('scroll', handleScroll);
 
 
 
+const elements3 = document.querySelectorAll('.animation__questions');
+
+function isInViewport3(element) {
+  const bounding = element.getBoundingClientRect();
+  return (
+    bounding.top >= 0 &&
+    bounding.left >= 0 &&
+    bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function handleScroll3() {
+  elements3.forEach(element => {
+    if (isInViewport3(element)) {
+      if (!element.classList.contains('in-view')) {
+        element.classList.add('animate__animated', 'animate__backInLeft', 'in-view');
+      }
+    } 
+  });
+}
+
+// Run handleScroll on page load and scroll event
+window.addEventListener('load', handleScroll3);
+window.addEventListener('scroll', handleScroll3);
+
+
+
 
 // Tabs
 const tabs = document.querySelectorAll('.calculator__tab');
