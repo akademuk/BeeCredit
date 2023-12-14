@@ -19,7 +19,35 @@ window.addEventListener('load', showImagesWithDelay);
 
 
 
-const elements = document.querySelectorAll('.article');
+const elements = document.querySelectorAll('.article1');
+
+function isInViewport1(element) {
+  const bounding = element.getBoundingClientRect();
+  return (
+    bounding.top >= 0 &&
+    bounding.left >= 0 &&
+    bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function handleScroll1() {
+  elements.forEach(element => {
+    if (isInViewport1(element)) {
+      if (!element.classList.contains('in-view')) {
+        element.classList.add('animate__animated', 'animate__backInLeft', 'in-view');
+      }
+    } 
+  });
+}
+
+// Run handleScroll on page load and scroll event
+window.addEventListener('load', handleScroll1);
+window.addEventListener('scroll', handleScroll1);
+
+
+
+const elements2 = document.querySelectorAll('.article2');
 
 function isInViewport(element) {
   const bounding = element.getBoundingClientRect();
@@ -32,10 +60,10 @@ function isInViewport(element) {
 }
 
 function handleScroll() {
-  elements.forEach(element => {
+  elements2.forEach(element => {
     if (isInViewport(element)) {
       if (!element.classList.contains('in-view')) {
-        element.classList.add('animate__animated', 'animate__backInLeft', 'in-view');
+        element.classList.add('animate__animated', 'animate__backInRight', 'in-view');
       }
     } 
   });
