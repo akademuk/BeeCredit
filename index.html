@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Credit</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="body">
+
+    <!-- Бургер меню -->
+    <div class="burger-menu">
+        <div class="burger-menu-main">
+            <button class="burger-link-close"></button>
+            <nav>
+				<ul class="list__hover">
+					<li class="link__item black_btn">
+						<a href="#">історія та команда</a>
+					</li>
+					<li class="link__item black_btn">
+						<a href="#">члени асоціації</a>
+					</li>
+					<li class="link__item black_btn">
+						<a href="#">партнери</a>
+					</li>
+					<li class="link__item black_btn">
+						<a href="#">контакти</a>
+					</li>
+				</ul>
+			</nav>
+        </div>
+    </div>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="#">
+                <img src="img/logo.svg" alt="logotype Bee Credit">
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Оплата кредиту</a>
+                    </li>
+                    <li>
+                        <a href="#">Розкриття інформації</a>
+                    </li>
+                    <li>
+                        <a href="#">Статті</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="header__btn btn__style">Авторизація</a>
+            <div class="burger-icon btn__style">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M6.75 5.625C6.75 5.8475 6.68402 6.06501 6.5604 6.25002C6.43679 6.43502 6.26109 6.57922 6.05552 6.66437C5.84995 6.74951 5.62375 6.77179 5.40552 6.72838C5.1873 6.68498 4.98684 6.57783 4.82951 6.4205C4.67217 6.26316 4.56503 6.06271 4.52162 5.84448C4.47821 5.62625 4.50049 5.40005 4.58564 5.19448C4.67078 4.98891 4.81498 4.81321 4.99998 4.6896C5.18499 4.56598 5.4025 4.5 5.625 4.5C5.92337 4.5 6.20952 4.61853 6.4205 4.82951C6.63147 5.04048 6.75 5.32663 6.75 5.625ZM12 4.5C11.7775 4.5 11.56 4.56598 11.375 4.6896C11.19 4.81321 11.0458 4.98891 10.9606 5.19448C10.8755 5.40005 10.8532 5.62625 10.8966 5.84448C10.94 6.06271 11.0472 6.26316 11.2045 6.4205C11.3618 6.57783 11.5623 6.68498 11.7805 6.72838C11.9988 6.77179 12.225 6.74951 12.4305 6.66437C12.6361 6.57922 12.8118 6.43502 12.9354 6.25002C13.059 6.06501 13.125 5.8475 13.125 5.625C13.125 5.32663 13.0065 5.04048 12.7955 4.82951C12.5845 4.61853 12.2984 4.5 12 4.5ZM18.375 6.75C18.5975 6.75 18.815 6.68402 19 6.5604C19.185 6.43679 19.3292 6.26109 19.4144 6.05552C19.4995 5.84995 19.5218 5.62375 19.4784 5.40552C19.435 5.1873 19.3278 4.98684 19.1705 4.82951C19.0132 4.67217 18.8127 4.56503 18.5945 4.52162C18.3762 4.47821 18.15 4.50049 17.9445 4.58564C17.7389 4.67078 17.5632 4.81498 17.4396 4.99998C17.316 5.18499 17.25 5.4025 17.25 5.625C17.25 5.92337 17.3685 6.20952 17.5795 6.4205C17.7905 6.63147 18.0766 6.75 18.375 6.75ZM5.625 10.875C5.4025 10.875 5.18499 10.941 4.99998 11.0646C4.81498 11.1882 4.67078 11.3639 4.58564 11.5695C4.50049 11.775 4.47821 12.0012 4.52162 12.2195C4.56503 12.4377 4.67217 12.6382 4.82951 12.7955C4.98684 12.9528 5.1873 13.06 5.40552 13.1034C5.62375 13.1468 5.84995 13.1245 6.05552 13.0394C6.26109 12.9542 6.43679 12.81 6.5604 12.625C6.68402 12.44 6.75 12.2225 6.75 12C6.75 11.7016 6.63147 11.4155 6.4205 11.2045C6.20952 10.9935 5.92337 10.875 5.625 10.875ZM12 10.875C11.7775 10.875 11.56 10.941 11.375 11.0646C11.19 11.1882 11.0458 11.3639 10.9606 11.5695C10.8755 11.775 10.8532 12.0012 10.8966 12.2195C10.94 12.4377 11.0472 12.6382 11.2045 12.7955C11.3618 12.9528 11.5623 13.06 11.7805 13.1034C11.9988 13.1468 12.225 13.1245 12.4305 13.0394C12.6361 12.9542 12.8118 12.81 12.9354 12.625C13.059 12.44 13.125 12.2225 13.125 12C13.125 11.7016 13.0065 11.4155 12.7955 11.2045C12.5845 10.9935 12.2984 10.875 12 10.875ZM18.375 10.875C18.1525 10.875 17.935 10.941 17.75 11.0646C17.565 11.1882 17.4208 11.3639 17.3356 11.5695C17.2505 11.775 17.2282 12.0012 17.2716 12.2195C17.315 12.4377 17.4222 12.6382 17.5795 12.7955C17.7368 12.9528 17.9373 13.06 18.1555 13.1034C18.3738 13.1468 18.6 13.1245 18.8055 13.0394C19.0111 12.9542 19.1868 12.81 19.3104 12.625C19.434 12.44 19.5 12.2225 19.5 12C19.5 11.7016 19.3815 11.4155 19.1705 11.2045C18.9595 10.9935 18.6734 10.875 18.375 10.875ZM5.625 17.25C5.4025 17.25 5.18499 17.316 4.99998 17.4396C4.81498 17.5632 4.67078 17.7389 4.58564 17.9445C4.50049 18.15 4.47821 18.3762 4.52162 18.5945C4.56503 18.8127 4.67217 19.0132 4.82951 19.1705C4.98684 19.3278 5.1873 19.435 5.40552 19.4784C5.62375 19.5218 5.84995 19.4995 6.05552 19.4144C6.26109 19.3292 6.43679 19.185 6.5604 19C6.68402 18.815 6.75 18.5975 6.75 18.375C6.75 18.0766 6.63147 17.7905 6.4205 17.5795C6.20952 17.3685 5.92337 17.25 5.625 17.25ZM12 17.25C11.7775 17.25 11.56 17.316 11.375 17.4396C11.19 17.5632 11.0458 17.7389 10.9606 17.9445C10.8755 18.15 10.8532 18.3762 10.8966 18.5945C10.94 18.8127 11.0472 19.0132 11.2045 19.1705C11.3618 19.3278 11.5623 19.435 11.7805 19.4784C11.9988 19.5218 12.225 19.4995 12.4305 19.4144C12.6361 19.3292 12.8118 19.185 12.9354 19C13.059 18.815 13.125 18.5975 13.125 18.375C13.125 18.0766 13.0065 17.7905 12.7955 17.5795C12.5845 17.3685 12.2984 17.25 12 17.25ZM18.375 17.25C18.1525 17.25 17.935 17.316 17.75 17.4396C17.565 17.5632 17.4208 17.7389 17.3356 17.9445C17.2505 18.15 17.2282 18.3762 17.2716 18.5945C17.315 18.8127 17.4222 19.0132 17.5795 19.1705C17.7368 19.3278 17.9373 19.435 18.1555 19.4784C18.3738 19.5218 18.6 19.4995 18.8055 19.4144C19.0111 19.3292 19.1868 19.185 19.3104 19C19.434 18.815 19.5 18.5975 19.5 18.375C19.5 18.0766 19.3815 17.7905 19.1705 17.5795C18.9595 17.3685 18.6734 17.25 18.375 17.25Z"
+                        fill="#1B1B1B" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <svg xmlns="http://www.w3.org/2000/svg" class="moving-gradient" width="1105" height="864"
+                viewBox="0 0 1105 864" fill="none">
+                <g filter="url(#filter0_f_49_68)">
+                    <path
+                        d="M1446.06 203.921C1446.56 168.202 1415.94 139.961 1380.37 143.35L985.002 181.033C982.179 181.302 979.379 181.771 976.623 182.436L296.927 346.421C241.721 359.74 234.196 435.184 285.684 459.145L1350.97 954.904C1390.42 973.26 1435.67 944.848 1436.28 901.347L1446.06 203.921Z"
+                        fill="#FFF72B" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_49_68" x="0.986855" y="-106.926" width="1695.08" height="1317.5"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_49_68" />
+                    </filter>
+                </defs>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="moving-gradien2" width="511" height="864"
+                viewBox="0 0 511 864" fill="none">
+                <g filter="url(#filter0_f_49_69)">
+                    <path
+                        d="M-1056.71 545.902C-1079.6 522.389 -1079.36 484.842 -1056.16 461.629L-575.174 -19.6458C-557.522 -37.3085 -530.775 -42.1916 -508.021 -31.9059L225.226 299.541C266.876 318.368 273.021 374.992 236.379 402.315L-551.586 989.885C-575.715 1007.88 -609.44 1005.21 -630.439 983.644L-1056.71 545.902Z"
+                        fill="url(#paint0_linear_49_69)" />
+                    <path
+                        d="M-1056.71 545.902C-1079.6 522.389 -1079.36 484.842 -1056.16 461.629L-575.174 -19.6458C-557.522 -37.3085 -530.775 -42.1916 -508.021 -31.9059L225.226 299.541C266.876 318.368 273.021 374.992 236.379 402.315L-551.586 989.885C-575.715 1007.88 -609.44 1005.21 -630.439 983.644L-1056.71 545.902Z"
+                        fill="black" fill-opacity="0.2" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_49_69" x="-1323.72" y="-287.234" width="1834.24" height="1539.02"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_49_69" />
+                    </filter>
+                    <linearGradient id="paint0_linear_49_69" x1="1979.71" y1="460.709" x2="2909.77" y2="-152.953"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFC75B" />
+                        <stop offset="0.338592" stop-color="#FFF3DB" />
+                        <stop offset="1" stop-color="#FFEDC9" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="wrapper">
+                <div class="hero__tittle">
+                    <h1>Кредит готівкою до 100 000 грн</h1>
+                    <p>Беріть на будь-який термін - платіть лише за дні користування кредитом</p>
+                    <a href="#" class="hero__btn btn__style">Реєстрація</a>
+                </div>
+                <div class="hero__img">
+                    <figure>
+                        <img src="img/hero.png" alt="hero image">
+                    </figure>
+                    <div class="hero__img-eclipse">
+                        <img src="img/Ellipse.svg" alt="Ellipse">
+                    </div>
+                    <div class="hero__money">
+                        <img src="img/money1.png" class="hero__money1" alt="money animation">
+                        <img src="img/money2.png" class="hero__money2" alt="money animation">
+                        <img src="img/money3.png" class="hero__money3" alt="money animation">
+                        <img src="img/money4.png" class="hero__money4" alt="money animation">
+                        <img src="img/money5.png" class="hero__money5" alt="money animation">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Як отримати «Кредит готівкою» від BeeCredit? -->
+        <section class="get">
+            <div class="wrapper">
+                <h2 class="tittle">Як отримати «Кредит готівкою» від BeeCredit?</h2>
+                <div class="get__box">
+                    <article class="article">
+                        <h3>Приймаємо і обробляємо заявки на кредит цілодобово, без вихідних</h3>
+                        <figure>
+                            <img src="img/article__get1.png"
+                                alt="Приймаємо і обробляємо заявки на кредит цілодобово, без вихідних">
+                        </figure>
+                    </article>
+
+                    <article class="article__center">
+                        <h3>Швидка реєстрація за допомогою <br> BankId НБУ</h3>
+                        <figure>
+                            <img src="img/article__get2.png" alt="Швидка реєстрація за допомогою BankId НБУ">
+                        </figure>
+                    </article>
+
+                    <article class="article">
+                        <h3>Автоматична система схвалення заявок та миттєве зарахування коштів</h3>
+                        <figure>
+                            <img src="img/article__get3.png"
+                                alt="Автоматична система схвалення заявок та миттєве зарахування коштів">
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Кредитний калькулятор -->
+        <section class="calculator">
+            <svg xmlns="http://www.w3.org/2000/svg" class="gradient__calc" width="1912" height="1658"
+                viewBox="0 0 1912 1658" fill="none">
+                <g filter="url(#filter0_f_49_25)">
+                    <path
+                        d="M1491.06 480.921C1491.56 445.202 1460.94 416.961 1425.37 420.35L1030 458.033C1027.18 458.302 1024.38 458.771 1021.62 459.436L341.927 623.421C286.721 636.74 279.196 712.184 330.684 736.145L1395.97 1231.9C1435.42 1250.26 1480.67 1221.85 1481.28 1178.35L1491.06 480.921Z"
+                        fill="#FFF72B" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_49_25" x="-124.013" y="0.0738525" width="2035.08" height="1657.5"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="210" result="effect1_foregroundBlur_49_25" />
+                    </filter>
+                </defs>
+            </svg>
+            <div class="wrapper">
+                <h2 class="tittle">Кредитний калькулятор</h2>
+                <div class="calculator__box">
+                    <div class="calculator__tabs">
+                        <div class="calculator__tab" data-tab="calculator__tab1">Калькулятор 1 <span>Мікрокредит</span>
+                        </div>
+                        <div class="calculator__tab" data-tab="calculator__tab2">Калькулятор 2 <span>Споживчий
+                                кредит</span></div>
+                    </div>
+                    <div class="calculator__containers">
+                        <div class="calculator__content active" id="calculator__tab1">
+                            <div class="calculator__column calculator__column-form">
+                                <form action="">
+                                    <label for="range1">Сума кредиту, грн</label>
+                                    <span id="rangeValue1">50</span>
+                                    <input type="range" id="range1" name="range1" min="0" max="100" value="50"
+                                        class="custom-range">
+
+                                    <label for="range2">Строк кредиту, днів</label>
+                                    <span id="rangeValue2">25</span>
+                                    <input type="range" id="range2" name="range2" min="0" max="100" value="25"
+                                        class="custom-range">
+
+                                    <button type="submit" class="btn__style">Далі</button>
+                                </form>
+
+                                <div class="calculator__container padding">
+                                    <h3>Загальні витрати за споживчим кредитом</h3>
+                                    <p class="calculator__container-text">сума до повернення в основний період + сума до
+                                        повернення в другий період</p>
+
+                                    <p>Загальні витрати за <br>
+                                        споживчим кредитом:</p>
+                                    <span id="">100 грн</span>
+
+                                    <p>Сума платежу за основний період:</p>
+                                    <span id="">80 грн</span>
+
+                                    <p>Сума платежу за другий період:</p>
+                                    <span id="">20 грн</span>
+
+                                    <p>Загальна вартість кредиту:</p>
+                                    <span id="">100 грн</span>
+                                </div>
+                            </div>
+                            <div class="calculator__column">
+                                <div class="calculator__container">
+                                    <h3 class="margins">Умови основного періоду договору :</h3>
+
+                                    <div class="calculator__row">
+                                        <p>Сума кредиту:</p>
+                                        <span id="">2 000 грн</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Термін основного періоду кредиту:</p>
+                                        <span id="">10 днів</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Сума разової комісії за видачу кредиту:</p>
+                                        <span id="">100 грн</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Вартість користування кредитом в основний період:</p>
+                                        <span id="">650 грн</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Сума до повернення (в основний період):</p>
+                                        <span id="">2 650 грн</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Дата повернення кредиту в Основний період</p>
+                                        <span id="">14.12.2023</span>
+                                    </div>
+                                </div>
+
+                                <div class="calculator__container padding2">
+                                    <h3 class="margins">Умови другого періоду договору* :</h3>
+
+                                    <div class="calculator__row">
+                                        <p>Дата початку Другого періоду:</p>
+                                        <span id="">15.12.2023</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Тривалість Другого періоду:</p>
+                                        <span id="">365 днів</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Ви сплатите за користування кредитом по завершенню Другого періоду (сума до
+                                            повернення через 365 днів):</p>
+                                        <span id="">18 177.00 грн</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Дата повернення кредиту по завершенню Другого періоду:</p>
+                                        <span id="">14.12.2024</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p style="width: 96%;">Реальна річна процентна ставка, відсотків річних
+                                            (Розрахунок здійснено за
+                                            весь строк кредитування 376 днів)</p>
+                                        <span id="">917%</span>
+                                    </div>
+
+                                    <p class="calculator__container-bottom">* - під Другим періодом мається на увазі
+                                        додатковий період, в який нараховуються
+                                        проценти за кредитом в разі відсутності вчасної оплати кредиту по завершенню
+                                        Основного періоду</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__content" id="calculator__tab2">
+                            <p class="position">❗️ недоступний при першому звернення споживача за послугою</p>
+                            <div class="calculator__column">
+                                <form action="">
+                                    <label for="range3">Сума кредиту, грн</label>
+                                    <span id="rangeValue3">50</span>
+                                    <input type="range" id="range3" name="range3" min="0" max="100" value="50"
+                                        class="custom-range">
+
+                                    <label for="range4">Строк кредиту, днів</label>
+                                    <span id="rangeValue4">25</span>
+                                    <input type="range" id="range4" name="range4" min="0" max="100" value="25"
+                                        class="custom-range">
+
+                                    <button type="submit" class="btn__style">Далі</button>
+                                </form>
+
+                                <div class="calculator__container padding">
+                                    <h3>Загальні витрати за споживчим кредитом</h3>
+                                    <p class="calculator__container-text">сума до повернення в основний період + сума до
+                                        повернення в другий період</p>
+
+                                    <p>Загальні витрати за <br>
+                                        споживчим кредитом:</p>
+                                    <span id="">100 грн</span>
+
+                                    <p>Сума платежу за основний період:</p>
+                                    <span id="">80 грн</span>
+
+                                    <p>Сума платежу за другий період:</p>
+                                    <span id="">20 грн</span>
+
+                                    <p>Загальна вартість кредиту:</p>
+                                    <span id="">100 грн</span>
+                                </div>
+                            </div>
+                            <div class="calculator__column">
+                                <div class="calculator__container">
+                                    <h3 class="margins">Умови основного періоду договору :</h3>
+
+                                    <div class="calculator__row">
+                                        <p>Сума кредиту:</p>
+                                        <span id="">2 000 грн</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Термін основного періоду кредиту:</p>
+                                        <span id="">10 днів</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Сума разової комісії за видачу кредиту:</p>
+                                        <span id="">100 грн</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Вартість користування кредитом в основний період:</p>
+                                        <span id="">650 грн</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Сума до повернення (в основний період):</p>
+                                        <span id="">2 650 грн</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Дата повернення кредиту в Основний період</p>
+                                        <span id="">14.12.2023</span>
+                                    </div>
+                                </div>
+
+                                <div class="calculator__container padding2">
+                                    <h3 class="margins">Умови другого періоду договору* :</h3>
+
+                                    <div class="calculator__row">
+                                        <p>Дата початку Другого періоду:</p>
+                                        <span id="">15.12.2023</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Тривалість Другого періоду:</p>
+                                        <span id="">365 днів</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Ви сплатите за користування кредитом по завершенню Другого періоду (сума до
+                                            повернення через 365 днів):</p>
+                                        <span id="">18 177.00 грн</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p>Дата повернення кредиту по завершенню Другого періоду:</p>
+                                        <span id="">14.12.2024</span>
+                                    </div>
+
+                                    <div class="calculator__row">
+                                        <p style="width: 96%;">Реальна річна процентна ставка, відсотків річних
+                                            (Розрахунок здійснено за
+                                            весь строк кредитування 376 днів)</p>
+                                        <span id="">917%</span>
+                                    </div>
+
+                                    <p class="calculator__container-bottom">* - під Другим періодом мається на увазі
+                                        додатковий період, в який нараховуються
+                                        проценти за кредитом в разі відсутності вчасної оплати кредиту по завершенню
+                                        Основного періоду</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Кредитні продукти -->
+        <section class="products">
+            <div class="wrapper">
+                <h2 class="tittle">Кредитні продукти</h2>
+                <div class="products__box">
+                    <div class="products__container">
+                        <h3>Smart</h3>
+                        <div class="products__download">
+                            <a href="img/article__get1.png" download="example">📄 Істотні характеристики 1</a>
+                            <a href="img/article__get1.png" download="example">📄 Істотні характеристики 2</a>
+                            <a href="img/article__get1.png" download="example">📄 Істотні характеристики 3</a>
+                            <a href="img/article__get1.png" download="example">⤵️ Тарифи та приклади розрахунків</a>
+                            <a href="img/article__get1.png" download="example">🔗 Договір та правила</a>
+                        </div>
+                        <div class="products__accordion">
+                            <div class="products__accordion-container products__accordion-container-smart">
+                                <div class="products__accordion-heading products__accordion-heading-smart">Інформація
+                                    для клієнтів</div>
+                                <div class="products__accordion-contents products__accordion-contents-smart">
+                                    <div class="products__accordion-scroll">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                        velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus
+                                        exercitationem nisi aut.
+                                        Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                        velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus
+                                        exercitationem nisi aut.
+                                        Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                        velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus
+                                        exercitationem nisi aut.
+                                        Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                                    </div>
+                                </div>
+
+                                <div class="products__accordion-heading products__accordion-heading-smart">Попередження
+                                </div>
+                                <div class="products__accordion-contents products__accordion-contents-smart">
+                                    <div class="products__accordion-scroll">
+                                        Наслідки для споживача в разі користування Кредитом:За користування Кредитом
+                                        споживач виплачує Кредитодавцю проценти в розмірі, визначеному в електронному
+                                        договорі. Сума кредиту, процентів за користування кредитом, неустойки (за
+                                        наявності) та інших платежів, передбачених електронним договором, підлягають
+                                        безготівковому перерахуванню на поточний рахунок Кредитодавця у строки,
+                                        встановлені електронним договором та чинним
+                                        Наслідки для споживача в разі користування Кредитом:За користування Кредитом
+                                        споживач виплачує Кредитодавцю проценти в розмірі, визначеному в електронному
+                                        договорі. Сума кредиту, процентів за користування кредитом, неустойки (за
+                                        наявності) та інших платежів, передбачених електронним договором, підлягають
+                                        безготівковому перерахуванню на поточний рахунок Кредитодавця у строки,
+                                        встановлені електронним договором та чинним
+                                        Наслідки для споживача в разі користування Кредитом:За користування Кредитом
+                                        споживач виплачує Кредитодавцю проценти в розмірі, визначеному в електронному
+                                        договорі. Сума кредиту, процентів за користування кредитом, неустойки (за
+                                        наявності) та інших платежів, передбачених електронним договором, підлягають
+                                        безготівковому перерахуванню на поточний рахунок Кредитодавця у строки,
+                                        встановлені електронним договором та чинним
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__container">
+                        <h3>Trend</h3>
+                        <div class="products__download">
+                            <a href="img/article__get1.png" download="example">📄 Істотні характеристики 1</a>
+                            <a href="img/article__get1.png" download="example">📄 Істотні характеристики 2</a>
+                            <a href="img/article__get1.png" download="example">📄 Істотні характеристики 3</a>
+                            <a href="img/article__get1.png" download="example">➗ Калькулятор</a>
+                            <a href="img/article__get1.png" download="example">🔗 Договір та правила</a>
+                        </div>
+                        <div class="products__accordion">
+                            <div class="products__accordion-container products__accordion-container-trend">
+                                <div class="products__accordion-heading products__accordion-heading-trend">Інформація
+                                    для клієнтів</div>
+                                <div class="products__accordion-contents products__accordion-contents-trend">
+                                    <div class="products__accordion-scroll">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                        velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus
+                                        exercitationem nisi aut.
+                                        Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                        velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus
+                                        exercitationem nisi aut.
+                                        Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                        velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus
+                                        exercitationem nisi aut.
+                                        Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                                    </div>
+                                </div>
+
+                                <div class="products__accordion-heading products__accordion-heading-trend">Попередження
+                                </div>
+                                <div class="products__accordion-contents products__accordion-contents-trend">
+                                    <div class="products__accordion-scroll">
+                                        Наслідки для споживача в разі користування Кредитом:За користування Кредитом
+                                        споживач виплачує Кредитодавцю проценти в розмірі, визначеному в електронному
+                                        договорі. Сума кредиту, процентів за користування кредитом, неустойки (за
+                                        наявності) та інших платежів, передбачених електронним договором, підлягають
+                                        безготівковому перерахуванню на поточний рахунок Кредитодавця у строки,
+                                        встановлені електронним договором та чинним
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Питання та відповіді -->
+        <section class="questions">
+            <svg xmlns="http://www.w3.org/2000/svg" class="gradient" width="1317" height="857" viewBox="0 0 1105 1318"
+                fill="none">
+                <g filter="url(#filter0_f_49_21)">
+                    <path
+                        d="M-341.062 310.921C-341.562 275.202 -310.936 246.961 -275.375 250.35L119.998 288.033C122.821 288.302 125.621 288.771 128.377 289.436L808.073 453.421C863.279 466.74 870.804 542.184 819.316 566.145L-245.973 1061.9C-285.416 1080.26 -330.673 1051.85 -331.283 1008.35L-341.062 310.921Z"
+                        fill="#FFF72B" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_49_21" x="-591.068" y="0.0738525" width="1695.08" height="1317.5"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_49_21" />
+                    </filter>
+                </defs>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="gradient2" width="1415.978" height="1070.324"
+                viewBox="0 0 921 2040" fill="none">
+                <g filter="url(#filter0_f_49_22)">
+                    <path
+                        d="M1817.71 1083.9C1840.6 1060.39 1840.36 1022.84 1817.16 999.629L1336.17 518.354C1318.52 500.691 1291.78 495.808 1269.02 506.094L535.774 837.541C494.124 856.368 487.979 912.992 524.621 940.315L1312.59 1527.88C1336.71 1545.88 1370.44 1543.21 1391.44 1521.64L1817.71 1083.9Z"
+                        fill="url(#paint0_linear_49_22)" />
+                </g>
+                <defs>
+                    <filter id="filter0_f_49_22" x="0.481262" y="0.766113" width="2334.24" height="2039.02"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                        <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_49_22" />
+                    </filter>
+                    <linearGradient id="paint0_linear_49_22" x1="-1218.71" y1="998.709" x2="-2148.77" y2="385.047"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFC75B" />
+                        <stop offset="0.338592" stop-color="#FFF3DB" />
+                        <stop offset="1" stop-color="#FFEDC9" />
+                    </linearGradient>
+                </defs>
+            </svg>
+            <div class="wrapper">
+                <div class="questions__left">
+                    <h2 class="tittle">Питання та відповіді</h2>
+                    <figure>
+                        <img src="img/questions.png" alt="Кредитні продукти">
+                    </figure>
+                </div>
+                <div class="questions__right">
+                    <div class="questions__accardion">
+                        <div class="questions__heading">Загальні положення</div>
+                        <div class="questions__contents">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium
+                            velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi
+                            aut.
+                            Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                        </div>
+                    </div>
+
+                    <div class="questions__accardion">
+                        <div class="questions__heading">Про нас</div>
+                        <div class="questions__contents">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium
+                            velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi
+                            aut.
+                            Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                        </div>
+                    </div>
+
+                    <div class="questions__accardion">
+                        <div class="questions__heading">Оформлення кредиту</div>
+                        <div class="questions__contents">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium
+                            velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi
+                            aut.
+                            Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                        </div>
+                    </div>
+
+                    <div class="questions__accardion">
+                        <div class="questions__heading">Способи оплати</div>
+                        <div class="questions__contents">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium
+                            velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi
+                            aut.
+                            Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                        </div>
+                    </div>
+
+                    <div class="questions__accardion">
+                        <div class="questions__heading">Погашення кредиту</div>
+                        <div class="questions__contents">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium
+                            velit quis explicabo perspiciatis illum totam esse aperiam! Doloribus exercitationem nisi
+                            aut.
+                            Nihil, assumenda. Minima placeat recusandae, nam voluptas explicabo ratione!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Що робить нас найкращим сервісом з оформлення кредиту онлайн на картку? -->
+        <section class="theBest">
+            <div class="wrapper">
+                <div class="theBest__scroll">
+                    <h2 class="tittle">Отримати кредит на картку зі знижкою 99,9%</h2>
+                    <p>BeeCredit — це фінансовий сервіс онлайн-кредитування. Ми крокуємо в ногу з часом і пропонуємо
+                        клієнтам надшвидкі онлайн позики на вигідних умовах. Бо знаємо: у ситуацію, коли миттєво
+                        потрібні гроші в кредит на карточку, може потрапити кожен. Термінове лікування, вигідні
+                        авіабілети, курси перекваліфікації, зібрати дитину до школи або просто не вистачає коштів до
+                        зарплати — на сайті компанії ClickCredit ці задачі вирішуються за лічені хвилини. Надаємо гроші
+                        онлайн на карту швидко, просто і безвідмовно. Більшість наших клієнтів отримують позитивну
+                        відповідь.</p>
+                    <h2 class="tittle">Що робить нас найкращим сервісом з оформлення кредиту онлайн на картку?</h2>
+                    <span>1. Швидкість</span>
+                    <p>Рішення по заявці ми приймаємо за декілька хвилин. Якщо ви уважно заповнили анкету та без помилок
+                        вказали паспортні дані, ідентифікаційний код та номер своєї картки для зарахування грошей —
+                        максимум, через 5 хвилин гроші на карту онлайн будуть зараховані.</p>
+                    <span>2. Універсальність</span>
+                    <p>Ми видаємо кредити повнолітнім громадянам України. Ми поважаємо наших клієнтів.</p>
+                    <span>1. Швидкість</span>
+                    <p>Рішення по заявці ми приймаємо за декілька хвилин. Якщо ви уважно заповнили анкету та без помилок
+                        вказали паспортні дані, ідентифікаційний код та номер своєї картки для зарахування грошей —
+                        максимум, через 5 хвилин гроші на карту онлайн будуть зараховані.</p>
+                    <span>2. Універсальність</span>
+                    <p>Ми видаємо кредити повнолітнім громадянам України. Ми поважаємо наших клієнтів.</p>
+                    <span>1. Швидкість</span>
+                    <p>Рішення по заявці ми приймаємо за декілька хвилин. Якщо ви уважно заповнили анкету та без помилок
+                        вказали паспортні дані, ідентифікаційний код та номер своєї картки для зарахування грошей —
+                        максимум, через 5 хвилин гроші на карту онлайн будуть зараховані.</p>
+                    <span>2. Універсальність</span>
+                    <p>Ми видаємо кредити повнолітнім громадянам України. Ми поважаємо наших клієнтів.</p>
+                    <span>1. Швидкість</span>
+                    <p>Рішення по заявці ми приймаємо за декілька хвилин. Якщо ви уважно заповнили анкету та без помилок
+                        вказали паспортні дані, ідентифікаційний код та номер своєї картки для зарахування грошей —
+                        максимум, через 5 хвилин гроші на карту онлайн будуть зараховані.</p>
+                    <span>2. Універсальність</span>
+                    <p>Ми видаємо кредити повнолітнім громадянам України. Ми поважаємо наших клієнтів.</p>
+                    <span>1. Швидкість</span>
+                    <p>Рішення по заявці ми приймаємо за декілька хвилин. Якщо ви уважно заповнили анкету та без помилок
+                        вказали паспортні дані, ідентифікаційний код та номер своєї картки для зарахування грошей —
+                        максимум, через 5 хвилин гроші на карту онлайн будуть зараховані.</p>
+                    <span>2. Універсальність</span>
+                    <p>Ми видаємо кредити повнолітнім громадянам України. Ми поважаємо наших клієнтів.</p>
+                    <span>1. Швидкість</span>
+                    <p>Рішення по заявці ми приймаємо за декілька хвилин. Якщо ви уважно заповнили анкету та без помилок
+                        вказали паспортні дані, ідентифікаційний код та номер своєї картки для зарахування грошей —
+                        максимум, через 5 хвилин гроші на карту онлайн будуть зараховані.</p>
+                    <span>2. Універсальність</span>
+                    <p>Ми видаємо кредити повнолітнім громадянам України. Ми поважаємо наших клієнтів.</p>
+                    <span>1. Швидкість</span>
+                    <p>Рішення по заявці ми приймаємо за декілька хвилин. Якщо ви уважно заповнили анкету та без помилок
+                        вказали паспортні дані, ідентифікаційний код та номер своєї картки для зарахування грошей —
+                        максимум, через 5 хвилин гроші на карту онлайн будуть зараховані.</p>
+                    <span>2. Універсальність</span>
+                    <p>Ми видаємо кредити повнолітнім громадянам України. Ми поважаємо наших клієнтів.</p>
+                    <span>1. Швидкість</span>
+                    <p>Рішення по заявці ми приймаємо за декілька хвилин. Якщо ви уважно заповнили анкету та без помилок
+                        вказали паспортні дані, ідентифікаційний код та номер своєї картки для зарахування грошей —
+                        максимум, через 5 хвилин гроші на карту онлайн будуть зараховані.</p>
+                    <span>2. Універсальність</span>
+                    <p>Ми видаємо кредити повнолітнім громадянам України. Ми поважаємо наших клієнтів.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="logotype Bee Credit">
+                    </a>
+                </div>
+
+                <ul class="footer__navigation">
+                    <li>
+                        <a href="#">Умови отримання</a>
+                    </li>
+                    <li>
+                        <a href="#">Питання та відповіді</a>
+                    </li>
+                    <li>
+                        <a href="#">Юридична інформація</a>
+                    </li>
+                    <li>
+                        <a href="#">Про компанію</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакти</a>
+                    </li>
+                    <li>
+                        <a href="#">Інформація щодо захисту прав споживачів</a>
+                    </li>
+                    <li>
+                        <a href="#">Інформація для захищеної категорії Споживачів</a>
+                    </li>
+                    <li>
+                        <a href="#">Пам’ятка для військовослужбовця</a>
+                    </li>
+                </ul>
+
+                <div class="footer__contact">
+                    <h4>Контакти:</h4>
+                    <address>
+                        <a href="tel:0800301008">0 800 301 008</a>
+                        <a href="mailto:info@bee-credit.com.ua">info@bee-credit.com.ua</a>
+                    </address>
+                    <p>Контакти для звернення споживачів щодо захисту прав споживачів, захищеної категорії осіб та
+                        військовослужбовців</p>
+                </div>
+
+                <div class="footer__address">
+                    <h4>Юридична адреса:</h4>
+                    <p>ТОВ “Фінансова Компанія «ХУТКОПЕЙ»</p>
+                    <p>ЄДРПОУ 4419349404053</p>
+                    <address>
+                        місто Київ, вулиця Січових Стрільців, будинок 77
+                    </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    © 2023 Relume. All rights reserved.
+                </div>
+                <ul class="footer__privacy">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of Service</a>
+                    </li>
+                    <li>
+                        <a href="#">Cookies Settings</a>
+                    </li>
+                </ul>
+                <ul class="footer__social">
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <figure class="label__agency">
+            <a href="#">
+                <img src="img/LabelAgency.svg" alt="Label Agency">
+            </a>
+        </figure>
+    </footer>
+
+
+
+
+    <script src="script/jquery-3.7.0.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
