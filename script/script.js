@@ -270,4 +270,11 @@ document.querySelector('.burger-icon').addEventListener('click', () => {
   document.querySelector('.burger-menu').classList.toggle('open');
   document.querySelector('.body').classList.toggle('open');
 });
+document.querySelectorAll('.link-close').forEach(link => {
+  link.addEventListener('click', () => {
+      document.querySelector('.burger-icon').classList.remove('open');
+      document.querySelector('.burger-menu').classList.remove('open');
+      document.querySelector('.body').classList.remove('open');
+  });
+});
 // --------------------------------------------------------------------

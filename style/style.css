@@ -212,14 +212,7 @@ main {
     border-radius: 4px;
     background: #FDE614;
     position: relative;
-    z-index: 101;
-}
-
-.bar {
-    background: black;
-    width: 18px;
-    height: 1px !important;
-    margin: 2px 0 !important;
+    z-index: 5;
 }
 
 .burger-menu {
@@ -228,8 +221,8 @@ main {
     width: 100%;
     overflow: hidden;
     z-index: 100;
-    height: 100vh;
-    background: yellow;
+    height: calc(100vh - 80px);
+    background: #fff;
     transition: all 0.5s;
     display: flex;
     align-items: center;
@@ -238,34 +231,39 @@ main {
 }
 
 .burger-menu.open {
-    transform: translateY(0px);
+    transform: translateY(53.5%);
     transition: all 0.5s;
 }
-
-.burger-icon.open .bar:nth-child(2) {
-    transform: scaleX(0);
-    /* Скрываем средний бар для анимации крестика */
+.burger-menu-main li a {
+    color: #1B1B1B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
 }
-
-.burger-icon.open .bar:first-child {
-    transform: translateY(3px) rotate(45deg);
-    /* Первый бар крестика */
-}
-
-.burger-icon.open .bar:last-child {
-    transform: translateY(-7px) rotate(-45deg);
-    /* Последний бар крестика */
-}
-
-.burger-icon.open {
-    background: #F7BB6F;
-    transition: all 0.5s;
+.burger-menu-main ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 52px;
 }
 
 .body.open {
     overflow: hidden;
 }
-
+.burger-link-close {
+    display: none;
+}
+.burger-icon.open figure {
+    display: flex;
+}
+.burger-icon.open svg {
+    display: none;
+}
+.burger-icon figure {
+    display: none;
+}
 /*---------------------------------------------------------------*/
 
 
